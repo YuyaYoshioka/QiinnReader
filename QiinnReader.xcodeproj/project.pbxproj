@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */; };
+		F6A5A4EA295216E500B5BF1E /* SwiftyMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */; };
 		F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */; };
 		F6D5214E294B575D00C825DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214D294B575D00C825DE /* ContentView.swift */; };
 		F6D52150294B576300C825DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D5214F294B576300C825DE /* Assets.xcassets */; };
 		F6D52153294B576300C825DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D52152294B576300C825DE /* Preview Assets.xcassets */; };
+		F6D521C2294EE26E00C825DE /* QiitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C1294EE26E00C825DE /* QiitaModel.swift */; };
+		F6D521C4294EE2CE00C825DE /* QiitaItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */; };
+		F6D521C6294EE3CD00C825DE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C5294EE3CD00C825DE /* Error.swift */; };
+		F6D521C8294EE51600C825DE /* QiitaItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */; };
+		F6D521CA294EE6C800C825DE /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C9294EE6C800C825DE /* ItemsView.swift */; };
+		F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521CD294F25FA00C825DE /* IndicatorControl.swift */; };
+		F6D521D5294F394D00C825DE /* QiitaItemListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */; };
+		F6D521D7294F3A4E00C825DE /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521D6294F3A4E00C825DE /* Examples.swift */; };
+		F6D521D9294F4E4F00C825DE /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521D8294F4E4F00C825DE /* CustomDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemDetail.swift; sourceTree = "<group>"; };
 		F6D52148294B575D00C825DE /* QiinnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiinnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiinnReaderApp.swift; sourceTree = "<group>"; };
 		F6D5214D294B575D00C825DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6D5214F294B576300C825DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D52152294B576300C825DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6D521C1294EE26E00C825DE /* QiitaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaModel.swift; sourceTree = "<group>"; };
+		F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsRepository.swift; sourceTree = "<group>"; };
+		F6D521C5294EE3CD00C825DE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsViewModel.swift; sourceTree = "<group>"; };
+		F6D521C9294EE6C800C825DE /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		F6D521CD294F25FA00C825DE /* IndicatorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorControl.swift; sourceTree = "<group>"; };
+		F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemListCard.swift; sourceTree = "<group>"; };
+		F6D521D6294F3A4E00C825DE /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		F6D521D8294F4E4F00C825DE /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A5A4EA295216E500B5BF1E /* SwiftyMarkdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +73,11 @@
 		F6D5214A294B575D00C825DE /* QiinnReader */ = {
 			isa = PBXGroup;
 			children = (
+				F6D521CC294F25D800C825DE /* Util */,
+				F6D521C0294EE22600C825DE /* Model */,
+				F6D521BF294EE1FA00C825DE /* Repository */,
+				F6D521CB294F240E00C825DE /* UI */,
+				F6D521BE294EE1E100C825DE /* ViewModel */,
 				F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */,
 				F6D5214D294B575D00C825DE /* ContentView.swift */,
 				F6D5214F294B576300C825DE /* Assets.xcassets */,
@@ -65,6 +92,83 @@
 				F6D52152294B576300C825DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6D521BD294EE1C700C825DE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521C9294EE6C800C825DE /* ItemsView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		F6D521BE294EE1E100C825DE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6D521BF294EE1FA00C825DE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F6D521C0294EE22600C825DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521C1294EE26E00C825DE /* QiitaModel.swift */,
+				F6D521C5294EE3CD00C825DE /* Error.swift */,
+				F6D521D6294F3A4E00C825DE /* Examples.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6D521CB294F240E00C825DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521CF294F277900C825DE /* Components */,
+				F6D521D2294F391100C825DE /* Domain */,
+				F6D521BD294EE1C700C825DE /* Pages */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F6D521CC294F25D800C825DE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521CD294F25FA00C825DE /* IndicatorControl.swift */,
+				F6D521D8294F4E4F00C825DE /* CustomDateFormatter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F6D521CF294F277900C825DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F6D521D2294F391100C825DE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521D3294F392200C825DE /* Qiita */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F6D521D3294F392200C825DE /* Qiita */ = {
+			isa = PBXGroup;
+			children = (
+				F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */,
+				F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */,
+			);
+			path = Qiita;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +187,9 @@
 			dependencies = (
 			);
 			name = QiinnReader;
+			packageProductDependencies = (
+				F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */,
+			);
 			productName = QiinnReader;
 			productReference = F6D52148294B575D00C825DE /* QiinnReader.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +218,9 @@
 				Base,
 			);
 			mainGroup = F6D5213F294B575D00C825DE;
+			packageReferences = (
+				F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */,
+			);
 			productRefGroup = F6D52149294B575D00C825DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D521CA294EE6C800C825DE /* ItemsView.swift in Sources */,
+				F6D521C2294EE26E00C825DE /* QiitaModel.swift in Sources */,
+				F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */,
+				F6D521C8294EE51600C825DE /* QiitaItemsViewModel.swift in Sources */,
+				F6D521C4294EE2CE00C825DE /* QiitaItemsRepository.swift in Sources */,
 				F6D5214E294B575D00C825DE /* ContentView.swift in Sources */,
+				F6D521D5294F394D00C825DE /* QiitaItemListCard.swift in Sources */,
+				F6D521C6294EE3CD00C825DE /* Error.swift in Sources */,
 				F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */,
+				F6D521D7294F3A4E00C825DE /* Examples.swift in Sources */,
+				F6D521D9294F4E4F00C825DE /* CustomDateFormatter.swift in Sources */,
+				F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -339,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimonFairbairn/SwiftyMarkdown";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */;
+			productName = SwiftyMarkdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6D52140294B575D00C825DE /* Project object */;
 }
