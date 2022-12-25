@@ -9,17 +9,25 @@ import Foundation
 import Combine
 
 final class QiitaItemsViewModel: ObservableObject {
+    private var qiitaItemsRepository: QiitaItemsRepository
+    private var cancellable: AnyCancellable?
+    private var page = 1
+
     @Published var qiitaItems: [QiitaItem] = []
-    var qiitaItemsRepository: QiitaItemsRepository
-    var cancellable: AnyCancellable?
     
     init(qiitaItemsRepository: QiitaItemsRepository = QiitaItemsRepositoryImpl()) {
         self.qiitaItemsRepository = qiitaItemsRepository
     }
     
-    func loadQiitaItems() {
+    func loadQiitaItems(refresh: Bool) {
+        if refresh {
+            page = 1
+        }
+        if page > 100 {
+            return
+        }
         IndicatorControl.shared.showLoading()
-        cancellable = qiitaItemsRepository.loadQiitaItems()
+        cancellable = qiitaItemsRepository.loadQiitaItems(page: page)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
@@ -30,10 +38,15 @@ final class QiitaItemsViewModel: ObservableObject {
                 case .finished:
                     print("loadQiitaItems finished")
                     IndicatorControl.shared.hideLoading()
+                    self.page += 1
                 }
             },
               receiveValue: { qiitaItems in
-                self.qiitaItems = qiitaItems
+                if refresh {
+                    self.qiitaItems = qiitaItems
+                } else {
+                    self.qiitaItems += qiitaItems
+                }
             }
         )
     }

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */; };
-		F6A5A4EA295216E500B5BF1E /* SwiftyMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */; };
+		F6ADCE9229576B66004CD8E9 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = F6ADCE9129576B66004CD8E9 /* MarkdownView */; };
+		F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */; };
 		F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */; };
 		F6D5214E294B575D00C825DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214D294B575D00C825DE /* ContentView.swift */; };
 		F6D52150294B576300C825DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D5214F294B576300C825DE /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemDetail.swift; sourceTree = "<group>"; };
+		F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIcon.swift; sourceTree = "<group>"; };
 		F6D52148294B575D00C825DE /* QiinnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiinnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiinnReaderApp.swift; sourceTree = "<group>"; };
 		F6D5214D294B575D00C825DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A5A4EA295216E500B5BF1E /* SwiftyMarkdown in Frameworks */,
+				F6ADCE9229576B66004CD8E9 /* MarkdownView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,7 @@
 		F6D521CF294F277900C825DE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 			);
 			name = QiinnReader;
 			packageProductDependencies = (
-				F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */,
+				F6ADCE9129576B66004CD8E9 /* MarkdownView */,
 			);
 			productName = QiinnReader;
 			productReference = F6D52148294B575D00C825DE /* QiinnReader.app */;
@@ -219,7 +222,7 @@
 			);
 			mainGroup = F6D5213F294B575D00C825DE;
 			packageReferences = (
-				F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */,
+				F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */,
 			);
 			productRefGroup = F6D52149294B575D00C825DE /* Products */;
 			projectDirPath = "";
@@ -259,6 +262,7 @@
 				F6D521D7294F3A4E00C825DE /* Examples.swift in Sources */,
 				F6D521D9294F4E4F00C825DE /* CustomDateFormatter.swift in Sources */,
 				F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */,
+				F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,21 +465,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */ = {
+		F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SimonFairbairn/SwiftyMarkdown";
+			repositoryURL = "https://github.com/keitaoouchi/MarkdownView";
 			requirement = {
 				kind = exactVersion;
-				version = 1.2.4;
+				version = 1.9.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F6A5A4E9295216E500B5BF1E /* SwiftyMarkdown */ = {
+		F6ADCE9129576B66004CD8E9 /* MarkdownView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6A5A4E8295216E500B5BF1E /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */;
-			productName = SwiftyMarkdown;
+			package = F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */;
+			productName = MarkdownView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

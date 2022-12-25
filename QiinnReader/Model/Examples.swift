@@ -20,7 +20,7 @@ struct QiitaModelExamples {
             private: false,
             stocksCount: 2250,
             tags: [
-                QiitaItemTag(name: "初心者", versions: [])
+                QiitaItem.QiitaItemTag(name: "初心者", versions: [])
 
             ],
             title: "最初から強いやつの特徴",

@@ -27,11 +27,20 @@ struct QiitaItem: Codable, Identifiable {
     var url: String
     var user: QiitaUser
     var pageViewsCount: Int?
+    
+    struct QiitaItemTag: Codable {
+        var name: String
+        var versions: [String]
+    }
 }
 
-struct QiitaItemTag: Codable {
-    var name: String
-    var versions: [String]
+extension QiitaItem {
+    func createTagNames() -> String {
+        let names = tags.map(\.name)
+        let namesStr = names.joined(separator: ",")
+        
+        return namesStr
+    }
 }
 
 struct QiitaUser: Codable, Identifiable {

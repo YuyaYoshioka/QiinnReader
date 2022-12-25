@@ -27,14 +27,20 @@ struct QiitaItemListCard: View {
                         .font(.caption)
                         .foregroundColor(.gray)
                 }
-                Text(item.title)
-                    .font(.title3)
+                NavigationLink {
+                    QiitaItemDetail(item: item)
+                } label: {
+                    Text(item.title)
+                        .foregroundColor(.primary)
+                        .font(.title3)
+                        .multilineTextAlignment(.leading)
+                }
                 VStack(alignment: .leading, spacing: 4) {
                     HStack(alignment: .top) {
                         Image(systemName: "tag.fill")
                             .foregroundColor(.gray)
                             .rotationEffect(.degrees(270))
-                        Text(tagsName)
+                        Text(item.createTagNames())
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.footnote)
                     }
@@ -48,35 +54,12 @@ struct QiitaItemListCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background(.white)
         .cornerRadius(16)
-    }
-    
-    private var tagsName: String {
-        let titles = item.tags.map(\.name)
-        let titlesStr = titles.joined(separator: ",")
-        
-        print(titles)
-        print(titlesStr)
-        
-        return titlesStr
     }
 }
 
 struct QiitaItemListCard_Previews: PreviewProvider {
     static var previews: some View {
         QiitaItemListCard(item: QiitaModelExamples.createQiitaItemFactory())
-    }
-}
-
-extension String {
-    func getAttributedString() -> AttributedString {
-        do {
-            let attributedString = try AttributedString(markdown: self)
-            return attributedString
-        } catch {
-            print("")
-        }
-        return AttributedString("Error parsing")
     }
 }

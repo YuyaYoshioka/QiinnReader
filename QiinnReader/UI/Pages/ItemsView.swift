@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemsView: View {
-    @ObservedObject var qiitaItemsViewModel: QiitaItemsViewModel
+    @ObservedObject private var qiitaItemsViewModel: QiitaItemsViewModel
     
     init(qiitaItemsViewModel: QiitaItemsViewModel) {
         self.qiitaItemsViewModel = qiitaItemsViewModel
@@ -16,30 +16,38 @@ struct ItemsView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                Color(red: 239/255, green: 239/255, blue: 239/255)
-                    .edgesIgnoringSafeArea(.all)
+            GeometryReader { geometry in
                 ScrollView {
-                    VStack {
+                    LazyVStack {
                         ForEach(qiitaItemsViewModel.qiitaItems) { qiitaItem in
                             QiitaItemListCard(item: qiitaItem)
                                 .padding(.leading)
                                 .padding(.trailing)
+                            Divider()
                         }
                     }
+                    .background(GeometryReader { proxy -> Color in
+                        if -proxy.frame(in: .global).origin.y + geometry.size.height + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom == proxy.size.height {
+                            qiitaItemsViewModel.loadQiitaItems(refresh: false)
+                        }
+                        return Color.clear
+                    })
                 }
+                .refreshable {
+                    qiitaItemsViewModel.loadQiitaItems(refresh: true)
+                }
+                .navigationTitle("記事一覧")
             }
-            .navigationTitle("記事一覧")
         }
         .onAppear {
             if !qiitaItemsViewModel.qiitaItems.isEmpty { return }
-            qiitaItemsViewModel.loadQiitaItems()
+            qiitaItemsViewModel.loadQiitaItems(refresh: false)
         }
     }
 }
 
 //struct ItemsView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ItemsView()
+//        ItemsView(qiitaItemsViewModel: QiitaItemsViewModel())
 //    }
 //}

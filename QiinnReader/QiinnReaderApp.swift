@@ -15,10 +15,10 @@ struct QiinnReaderApp: App {
         WindowGroup {
             ZStack {
                 if indicatorControl.isShow {
-                    ProgressView().zIndex(10)
+                    ProgressIcon()
+                        .zIndex(10)
                 }
                 ContentView()
-                    .background(Color(red: 239/255, green: 239/255, blue: 239/255))
             }
         }
     }

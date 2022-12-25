@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 protocol QiitaItemsRepository {
-    func loadQiitaItems() -> AnyPublisher<[QiitaItem], Error>
+    func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error>
 }
 
 
 final class QiitaItemsRepositoryImpl: QiitaItemsRepository {
-    func loadQiitaItems() -> AnyPublisher<[QiitaItem], Error> {
-        let urlStr = qiitaBaseURL + "/items"
+    func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error> {
+        let urlStr = qiitaBaseURL + "/items?page=\(page)"
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let result = URLSession.shared.dataTaskPublisher(for: URL(string: urlStr)!)
