@@ -30,6 +30,8 @@ final class QiitaItemsViewModel: ObservableObject {
         cancellable = qiitaItemsRepository.loadQiitaItems(page: page)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
+                IndicatorControl.shared.hideLoading()
+
                 switch completion {
                 case .failure(let error):
                     if let apiError = error as? APIError {
@@ -37,7 +39,6 @@ final class QiitaItemsViewModel: ObservableObject {
                     }
                 case .finished:
                     print("loadQiitaItems finished")
-                    IndicatorControl.shared.hideLoading()
                     self.page += 1
                 }
             },

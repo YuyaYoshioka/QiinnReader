@@ -9,59 +9,70 @@ import SwiftUI
 import MarkdownView
 
 struct QiitaItemDetail: View {
-    @State var item: QiitaItem
+    @ObservedObject var qiitaItemViewModel: QiitaItemViewModel
+    var qiitaItemID: String?
 
     var body: some View {
-        ScrollView {
-            HStack {
-                AsyncImage(url: URL(string: item.user.profileImageUrl)) { image in
-                    image.resizable()
-                } placeholder: {
-                    Image(systemName: "person.crop.circle").resizable()
+        if let item = qiitaItemViewModel.qiitaItem {
+            ScrollView {
+                HStack {
+                    AsyncImage(url: URL(string: item.user.profileImageUrl)) { image in
+                        image.resizable()
+                    } placeholder: {
+                        Image(systemName: "person.crop.circle").resizable()
+                    }
+                    .clipShape(Circle())
+                    .frame(width: 30, height: 30)
+                    Text("@\(item.user.id)")
+                    Spacer()
                 }
-                .clipShape(Circle())
-                .frame(width: 30, height: 30)
-                Text("@\(item.user.id)")
-                Spacer()
+                HStack {
+                    Text("投稿日")
+                    Text(CustomDateFormatter.createDateStrFromISO8601DateString(iSO8601DateString:  item.createdAt))
+                        .padding(.trailing)
+                    Text("更新日")
+                    Text(CustomDateFormatter.createDateStrFromISO8601DateString(iSO8601DateString:  item.updatedAt))
+                    Spacer()
+                }
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .padding(.bottom)
+                HStack {
+                    Text(item.title)
+                        .font(.title)
+                    Spacer()
+                }
+                .padding(.bottom)
+                HStack(alignment: .top) {
+                    Image(systemName: "tag.fill")
+                        .foregroundColor(.gray)
+                        .rotationEffect(.degrees(270))
+                    Text(item.createTagNames())
+                        .fixedSize(horizontal: false, vertical: true)
+                        .font(.footnote)
+                    Spacer()
+                }
+                .padding(.bottom, 40)
+                Markdown(markdown: item.body)
             }
-            HStack {
-                Text("投稿日")
-                Text(CustomDateFormatter.createDateStrFromISO8601DateString(iSO8601DateString:  item.createdAt))
-                    .padding(.trailing)
-                Text("更新日")
-                Text(CustomDateFormatter.createDateStrFromISO8601DateString(iSO8601DateString:  item.updatedAt))
-                Spacer()
-            }
-            .font(.footnote)
-            .foregroundColor(.gray)
-            .padding(.bottom)
-            HStack {
-                Text(item.title)
-                    .font(.title)
-                Spacer()
-            }
-            .padding(.bottom)
-            HStack(alignment: .top) {
-                Image(systemName: "tag.fill")
-                    .foregroundColor(.gray)
-                    .rotationEffect(.degrees(270))
-                Text(item.createTagNames())
-                    .fixedSize(horizontal: false, vertical: true)
-                    .font(.footnote)
-                Spacer()
-            }
-            .padding(.bottom, 64)
-            Markdown(markdown: item.body)
+            .padding()
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+        } else {
+            Color.clear
+                .onAppear {
+                    if qiitaItemViewModel.qiitaItem != nil { return }
+                    guard let id = qiitaItemID else { return }
+                    qiitaItemViewModel.loadData(qiitaItemID: id)
+                }
         }
-        .padding()
-        .navigationTitle("")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct QiitaItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        QiitaItemDetail(item: QiitaModelExamples.createQiitaItemFactory())
+        QiitaItemDetail(qiitaItemViewModel: QiitaItemViewModel(qiitaItem: QiitaModelExamples.createQiitaItemFactory())
+        )
     }
 }
 

@@ -10,6 +10,14 @@
 		F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */; };
 		F6ADCE9229576B66004CD8E9 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = F6ADCE9129576B66004CD8E9 /* MarkdownView */; };
 		F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */; };
+		F6ADCE962959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE952959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift */; };
+		F6ADCE982959D669004CD8E9 /* QiitaPopularItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE972959D669004CD8E9 /* QiitaPopularItemsViewModel.swift */; };
+		F6ADCE9A295B41F0004CD8E9 /* QiitaPopularItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE99295B41F0004CD8E9 /* QiitaPopularItemsView.swift */; };
+		F6ADCE9C295B4667004CD8E9 /* QiitaPopularItemListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9B295B4667004CD8E9 /* QiitaPopularItemListCard.swift */; };
+		F6ADCE9E295C7F36004CD8E9 /* QiitaItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9D295C7F36004CD8E9 /* QiitaItemRepository.swift */; };
+		F6ADCEA0295C831C004CD8E9 /* QiitaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */; };
+		F6ADCEA2295DEEA3004CD8E9 /* QiitaItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */; };
+		F6ADCEA4295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */; };
 		F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */; };
 		F6D5214E294B575D00C825DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214D294B575D00C825DE /* ContentView.swift */; };
 		F6D52150294B576300C825DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D5214F294B576300C825DE /* Assets.xcassets */; };
@@ -18,7 +26,7 @@
 		F6D521C4294EE2CE00C825DE /* QiitaItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */; };
 		F6D521C6294EE3CD00C825DE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C5294EE3CD00C825DE /* Error.swift */; };
 		F6D521C8294EE51600C825DE /* QiitaItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */; };
-		F6D521CA294EE6C800C825DE /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C9294EE6C800C825DE /* ItemsView.swift */; };
+		F6D521CA294EE6C800C825DE /* QiitaRecentItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521C9294EE6C800C825DE /* QiitaRecentItemsView.swift */; };
 		F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521CD294F25FA00C825DE /* IndicatorControl.swift */; };
 		F6D521D5294F394D00C825DE /* QiitaItemListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */; };
 		F6D521D7294F3A4E00C825DE /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D521D6294F3A4E00C825DE /* Examples.swift */; };
@@ -28,6 +36,14 @@
 /* Begin PBXFileReference section */
 		F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemDetail.swift; sourceTree = "<group>"; };
 		F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIcon.swift; sourceTree = "<group>"; };
+		F6ADCE952959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPopularItemsRepository.swift; sourceTree = "<group>"; };
+		F6ADCE972959D669004CD8E9 /* QiitaPopularItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPopularItemsViewModel.swift; sourceTree = "<group>"; };
+		F6ADCE99295B41F0004CD8E9 /* QiitaPopularItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPopularItemsView.swift; sourceTree = "<group>"; };
+		F6ADCE9B295B4667004CD8E9 /* QiitaPopularItemListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPopularItemListCard.swift; sourceTree = "<group>"; };
+		F6ADCE9D295C7F36004CD8E9 /* QiitaItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemRepository.swift; sourceTree = "<group>"; };
+		F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemViewModel.swift; sourceTree = "<group>"; };
+		F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsView.swift; sourceTree = "<group>"; };
+		F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QiitaItemsView+TopTabView.swift"; sourceTree = "<group>"; };
 		F6D52148294B575D00C825DE /* QiinnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiinnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiinnReaderApp.swift; sourceTree = "<group>"; };
 		F6D5214D294B575D00C825DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +53,7 @@
 		F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsRepository.swift; sourceTree = "<group>"; };
 		F6D521C5294EE3CD00C825DE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsViewModel.swift; sourceTree = "<group>"; };
-		F6D521C9294EE6C800C825DE /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		F6D521C9294EE6C800C825DE /* QiitaRecentItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRecentItemsView.swift; sourceTree = "<group>"; };
 		F6D521CD294F25FA00C825DE /* IndicatorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorControl.swift; sourceTree = "<group>"; };
 		F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemListCard.swift; sourceTree = "<group>"; };
 		F6D521D6294F3A4E00C825DE /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
@@ -99,7 +115,10 @@
 		F6D521BD294EE1C700C825DE /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				F6D521C9294EE6C800C825DE /* ItemsView.swift */,
+				F6D521C9294EE6C800C825DE /* QiitaRecentItemsView.swift */,
+				F6ADCE99295B41F0004CD8E9 /* QiitaPopularItemsView.swift */,
+				F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */,
+				F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -108,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */,
+				F6ADCE972959D669004CD8E9 /* QiitaPopularItemsViewModel.swift */,
+				F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */,
+				F6ADCE952959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift */,
+				F6ADCE9D295C7F36004CD8E9 /* QiitaItemRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -170,6 +193,7 @@
 			children = (
 				F6D521D4294F394D00C825DE /* QiitaItemListCard.swift */,
 				F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */,
+				F6ADCE9B295B4667004CD8E9 /* QiitaPopularItemListCard.swift */,
 			);
 			path = Qiita;
 			sourceTree = "<group>";
@@ -250,18 +274,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D521CA294EE6C800C825DE /* ItemsView.swift in Sources */,
+				F6D521CA294EE6C800C825DE /* QiitaRecentItemsView.swift in Sources */,
 				F6D521C2294EE26E00C825DE /* QiitaModel.swift in Sources */,
 				F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */,
 				F6D521C8294EE51600C825DE /* QiitaItemsViewModel.swift in Sources */,
 				F6D521C4294EE2CE00C825DE /* QiitaItemsRepository.swift in Sources */,
 				F6D5214E294B575D00C825DE /* ContentView.swift in Sources */,
+				F6ADCEA4295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift in Sources */,
 				F6D521D5294F394D00C825DE /* QiitaItemListCard.swift in Sources */,
+				F6ADCE962959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift in Sources */,
 				F6D521C6294EE3CD00C825DE /* Error.swift in Sources */,
+				F6ADCEA0295C831C004CD8E9 /* QiitaItemViewModel.swift in Sources */,
 				F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */,
 				F6D521D7294F3A4E00C825DE /* Examples.swift in Sources */,
+				F6ADCEA2295DEEA3004CD8E9 /* QiitaItemsView.swift in Sources */,
+				F6ADCE9E295C7F36004CD8E9 /* QiitaItemRepository.swift in Sources */,
 				F6D521D9294F4E4F00C825DE /* CustomDateFormatter.swift in Sources */,
 				F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */,
+				F6ADCE9C295B4667004CD8E9 /* QiitaPopularItemListCard.swift in Sources */,
+				F6ADCE982959D669004CD8E9 /* QiitaPopularItemsViewModel.swift in Sources */,
+				F6ADCE9A295B41F0004CD8E9 /* QiitaPopularItemsView.swift in Sources */,
 				F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

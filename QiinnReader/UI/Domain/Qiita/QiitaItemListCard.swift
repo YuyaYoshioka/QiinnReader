@@ -28,7 +28,7 @@ struct QiitaItemListCard: View {
                         .foregroundColor(.gray)
                 }
                 NavigationLink {
-                    QiitaItemDetail(item: item)
+                    QiitaItemDetail(qiitaItemViewModel: QiitaItemViewModel(qiitaItem: item))
                 } label: {
                     Text(item.title)
                         .foregroundColor(.primary)
@@ -54,7 +54,6 @@ struct QiitaItemListCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .cornerRadius(16)
     }
 }
 
