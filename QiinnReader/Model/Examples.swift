@@ -47,4 +47,8 @@ struct QiitaModelExamples {
             pageViewsCount: nil
         )
     }
+    
+    static func createQiitaPopularItemFactory() -> QiitaPopularItem {
+        QiitaPopularItem(entry: QiitaPopularItem.Entry(id: "tag:qiita.com,2005:PublicArticle/1663136", published: "2022-12-25T07:02:48+09:00", updated: "2022-12-25T07:02:48+09:00", link: "https://qiita.com/bug-taro/items/3b7cef4792e8cb8a872a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items", title: "たくさん外部発表してみた", content: "はじめに\nみなさま、メリークリスマスです。\n今年はどんな一年でしたでしょうか。\nこの記事を読んでいる方全員が心穏やかな一年であったことを祈っております。\n私は途中までは心穏やかであったものの、年の瀬…"), author: QiitaPopularItem.Author(name: "bug-taro"))
+    }
 }

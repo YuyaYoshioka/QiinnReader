@@ -12,7 +12,7 @@ struct ContentView: View {
         UITextView.appearance().backgroundColor = .clear
     }
     var body: some View {
-        ItemsView(qiitaItemsViewModel: QiitaItemsViewModel())
+        QiitaItemsView()
     }
 }
 

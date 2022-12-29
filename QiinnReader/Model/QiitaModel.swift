@@ -9,7 +9,8 @@ import Foundation
 
 // FYI: https://qiita.com/api/v2/docs
 
-let qiitaBaseURL = "https://qiita.com/api/v2"
+let qiitaBaseURL = "https://qiita.com"
+let qiitaAPIBaseURL = qiitaBaseURL + "/api/v2"
 
 struct QiitaItem: Codable, Identifiable {
     var renderedBody: String
@@ -60,4 +61,34 @@ struct QiitaUser: Codable, Identifiable {
     var teamOnly: Bool
     var twitterScreenName: String?
     var websiteUrl: String?
+}
+
+struct QiitaPopularItem {
+    var entry: Entry
+    var author: Author
+    
+    struct Entry {
+        var id: String
+        var published: String
+        var updated: String
+        var link: String
+        var title: String
+        var content: String
+        
+    }
+    
+    struct Author {
+        var name: String
+    }
+}
+
+extension QiitaPopularItem {
+    func createID() -> String? {
+        let linkArray = entry.link.split(separator: "/")
+        guard let index = linkArray.firstIndex(of: "items") else { return nil }
+        let idWithQueryParameter = linkArray[index + 1]
+        guard let id = idWithQueryParameter.split(separator: "?").first else { return nil }
+        
+        return String(id)
+    }
 }

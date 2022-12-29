@@ -1,23 +1,20 @@
 //
-//  GetQiitaItemsRepository.swift
+//  QiitaPopularItemsRepository.swift
 //  QiinnReader
 //
-//  Created by 吉岡雄也 on 2022/12/18.
+//  Created by 吉岡雄也 on 2022/12/26.
 //
 
 import Foundation
 import Combine
 
-protocol QiitaItemsRepository {
-    func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error>
+protocol QiitaPopularItemsRepository {
+    func loadData() -> AnyPublisher<Data, Error>
 }
 
-
-final class QiitaItemsRepositoryImpl: QiitaItemsRepository {
-    func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error> {
-        let urlStr = qiitaAPIBaseURL + "/items?page=\(page)"
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+final class QiitaPopularItemsRepositoryImpl: QiitaPopularItemsRepository {
+    func loadData() -> AnyPublisher<Data, Error> {
+        let urlStr = qiitaBaseURL + "/popular-items/feed"
         let result = URLSession.shared.dataTaskPublisher(for: URL(string: urlStr)!)
             .tryMap({ data, response -> Data in
                 guard let httpRes = response as? HTTPURLResponse else {
@@ -28,7 +25,6 @@ final class QiitaItemsRepositoryImpl: QiitaItemsRepository {
                 }
                 return data
             })
-            .decode(type: [QiitaItem].self, decoder: decoder)
             .eraseToAnyPublisher()
         
         return result
