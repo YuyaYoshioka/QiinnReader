@@ -12,7 +12,16 @@ struct ContentView: View {
         UITextView.appearance().backgroundColor = .clear
     }
     var body: some View {
-        QiitaItemsView()
+        TabView {
+            QiitaItemsView()
+                .tabItem {
+                    Label("Qiita", systemImage: "q.circle.fill")
+                }
+            QiitaAccountView()
+                .tabItem {
+                    Label("アカウント", systemImage: "person.crop.circle.fill")
+                }
+        }
     }
 }
 

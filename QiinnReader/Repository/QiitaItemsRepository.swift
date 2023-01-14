@@ -12,7 +12,6 @@ protocol QiitaItemsRepository {
     func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error>
 }
 
-
 final class QiitaItemsRepositoryImpl: QiitaItemsRepository {
     func loadQiitaItems(page: Int) -> AnyPublisher<[QiitaItem], Error> {
         let urlStr = qiitaAPIBaseURL + "/items?page=\(page)"

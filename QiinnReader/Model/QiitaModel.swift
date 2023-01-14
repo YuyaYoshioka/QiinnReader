@@ -92,3 +92,30 @@ extension QiitaPopularItem {
         return String(id)
     }
 }
+
+struct QiitaAccessToken: Decodable {
+    var clientId: String
+    var scopes: [String]
+    var token: String
+}
+
+struct QiitaAuthenticatedUser: Decodable {
+    var description: String?
+    var facebookId: String?
+    var followeesCount: Int
+    var followersCount: Int
+    var githubLoginName: String?
+    var id: String
+    var itemsCount: Int
+    var linkedinId: String?
+    var location: String?
+    var name: String?
+    var organization: String?
+    var permanentId: Int
+    var profileImageUrl: String
+    var teamOnly: Bool
+    var twitterScreenName: String?
+    var websiteUrl: String?
+    var imageMonthlyUploadLimit: Int
+    var imageMonthlyUploadRemaining: Int
+}

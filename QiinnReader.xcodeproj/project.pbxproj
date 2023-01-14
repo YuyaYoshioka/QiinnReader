@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F621DF81296DC76700DCC7FB /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = F621DF80296DC76700DCC7FB /* ArkanaKeys */; };
+		F621DF86296EE30800DCC7FB /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = F621DF85296EE30800DCC7FB /* KeychainAccess */; };
+		F621DF88296EE36900DCC7FB /* QiitaAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621DF87296EE36900DCC7FB /* QiitaAuthRepository.swift */; };
+		F621DF8A296F14BB00DCC7FB /* QiitaKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621DF89296F14BB00DCC7FB /* QiitaKeyChain.swift */; };
+		F621DF8C2973249C00DCC7FB /* QiitaAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621DF8B2973249C00DCC7FB /* QiitaAccountView.swift */; };
 		F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */; };
 		F6ADCE9229576B66004CD8E9 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = F6ADCE9129576B66004CD8E9 /* MarkdownView */; };
 		F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */; };
@@ -18,6 +23,7 @@
 		F6ADCEA0295C831C004CD8E9 /* QiitaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */; };
 		F6ADCEA2295DEEA3004CD8E9 /* QiitaItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */; };
 		F6ADCEA4295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */; };
+		F6ADCEAF29693C84004CD8E9 /* QiitaSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADCEAE29693C84004CD8E9 /* QiitaSignInViewModel.swift */; };
 		F6D5214C294B575D00C825DE /* QiinnReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */; };
 		F6D5214E294B575D00C825DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5214D294B575D00C825DE /* ContentView.swift */; };
 		F6D52150294B576300C825DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D5214F294B576300C825DE /* Assets.xcassets */; };
@@ -34,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F621DF7F296DC75E00DCC7FB /* ArkanaKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArkanaKeys; path = ArkanaKeys/ArkanaKeys; sourceTree = "<group>"; };
+		F621DF87296EE36900DCC7FB /* QiitaAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAuthRepository.swift; sourceTree = "<group>"; };
+		F621DF89296F14BB00DCC7FB /* QiitaKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaKeyChain.swift; sourceTree = "<group>"; };
+		F621DF8B2973249C00DCC7FB /* QiitaAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAccountView.swift; sourceTree = "<group>"; };
 		F6A5A4E62952132400B5BF1E /* QiitaItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemDetail.swift; sourceTree = "<group>"; };
 		F6ADCE9329588E65004CD8E9 /* ProgressIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIcon.swift; sourceTree = "<group>"; };
 		F6ADCE952959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPopularItemsRepository.swift; sourceTree = "<group>"; };
@@ -44,6 +54,8 @@
 		F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemViewModel.swift; sourceTree = "<group>"; };
 		F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemsView.swift; sourceTree = "<group>"; };
 		F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QiitaItemsView+TopTabView.swift"; sourceTree = "<group>"; };
+		F6ADCEAD296939B7004CD8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6ADCEAE29693C84004CD8E9 /* QiitaSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSignInViewModel.swift; sourceTree = "<group>"; };
 		F6D52148294B575D00C825DE /* QiinnReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiinnReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D5214B294B575D00C825DE /* QiinnReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiinnReaderApp.swift; sourceTree = "<group>"; };
 		F6D5214D294B575D00C825DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,16 +77,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F621DF81296DC76700DCC7FB /* ArkanaKeys in Frameworks */,
 				F6ADCE9229576B66004CD8E9 /* MarkdownView in Frameworks */,
+				F621DF86296EE30800DCC7FB /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F621DF7E296DC75E00DCC7FB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F621DF7F296DC75E00DCC7FB /* ArkanaKeys */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		F6D5213F294B575D00C825DE = {
 			isa = PBXGroup;
 			children = (
+				F621DF7E296DC75E00DCC7FB /* Packages */,
 				F6D5214A294B575D00C825DE /* QiinnReader */,
 				F6D52149294B575D00C825DE /* Products */,
 			);
@@ -91,6 +114,7 @@
 		F6D5214A294B575D00C825DE /* QiinnReader */ = {
 			isa = PBXGroup;
 			children = (
+				F6ADCEAD296939B7004CD8E9 /* Info.plist */,
 				F6D521CC294F25D800C825DE /* Util */,
 				F6D521C0294EE22600C825DE /* Model */,
 				F6D521BF294EE1FA00C825DE /* Repository */,
@@ -119,6 +143,7 @@
 				F6ADCE99295B41F0004CD8E9 /* QiitaPopularItemsView.swift */,
 				F6ADCEA1295DEEA3004CD8E9 /* QiitaItemsView.swift */,
 				F6ADCEA3295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift */,
+				F621DF8B2973249C00DCC7FB /* QiitaAccountView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -129,6 +154,7 @@
 				F6D521C7294EE51600C825DE /* QiitaItemsViewModel.swift */,
 				F6ADCE972959D669004CD8E9 /* QiitaPopularItemsViewModel.swift */,
 				F6ADCE9F295C831C004CD8E9 /* QiitaItemViewModel.swift */,
+				F6ADCEAE29693C84004CD8E9 /* QiitaSignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -139,6 +165,7 @@
 				F6D521C3294EE2CE00C825DE /* QiitaItemsRepository.swift */,
 				F6ADCE952959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift */,
 				F6ADCE9D295C7F36004CD8E9 /* QiitaItemRepository.swift */,
+				F621DF87296EE36900DCC7FB /* QiitaAuthRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -168,6 +195,7 @@
 			children = (
 				F6D521CD294F25FA00C825DE /* IndicatorControl.swift */,
 				F6D521D8294F4E4F00C825DE /* CustomDateFormatter.swift */,
+				F621DF89296F14BB00DCC7FB /* QiitaKeyChain.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -216,6 +244,8 @@
 			name = QiinnReader;
 			packageProductDependencies = (
 				F6ADCE9129576B66004CD8E9 /* MarkdownView */,
+				F621DF80296DC76700DCC7FB /* ArkanaKeys */,
+				F621DF85296EE30800DCC7FB /* KeychainAccess */,
 			);
 			productName = QiinnReader;
 			productReference = F6D52148294B575D00C825DE /* QiinnReader.app */;
@@ -247,6 +277,7 @@
 			mainGroup = F6D5213F294B575D00C825DE;
 			packageReferences = (
 				F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */,
+				F621DF84296EE30800DCC7FB /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = F6D52149294B575D00C825DE /* Products */;
 			projectDirPath = "";
@@ -276,12 +307,15 @@
 			files = (
 				F6D521CA294EE6C800C825DE /* QiitaRecentItemsView.swift in Sources */,
 				F6D521C2294EE26E00C825DE /* QiitaModel.swift in Sources */,
+				F621DF8A296F14BB00DCC7FB /* QiitaKeyChain.swift in Sources */,
+				F621DF8C2973249C00DCC7FB /* QiitaAccountView.swift in Sources */,
 				F6A5A4E72952132400B5BF1E /* QiitaItemDetail.swift in Sources */,
 				F6D521C8294EE51600C825DE /* QiitaItemsViewModel.swift in Sources */,
 				F6D521C4294EE2CE00C825DE /* QiitaItemsRepository.swift in Sources */,
 				F6D5214E294B575D00C825DE /* ContentView.swift in Sources */,
 				F6ADCEA4295E02D2004CD8E9 /* QiitaItemsView+TopTabView.swift in Sources */,
 				F6D521D5294F394D00C825DE /* QiitaItemListCard.swift in Sources */,
+				F621DF88296EE36900DCC7FB /* QiitaAuthRepository.swift in Sources */,
 				F6ADCE962959D4B2004CD8E9 /* QiitaPopularItemsRepository.swift in Sources */,
 				F6D521C6294EE3CD00C825DE /* Error.swift in Sources */,
 				F6ADCEA0295C831C004CD8E9 /* QiitaItemViewModel.swift in Sources */,
@@ -293,6 +327,7 @@
 				F6D521CE294F25FA00C825DE /* IndicatorControl.swift in Sources */,
 				F6ADCE9C295B4667004CD8E9 /* QiitaPopularItemListCard.swift in Sources */,
 				F6ADCE982959D669004CD8E9 /* QiitaPopularItemsViewModel.swift in Sources */,
+				F6ADCEAF29693C84004CD8E9 /* QiitaSignInViewModel.swift in Sources */,
 				F6ADCE9A295B41F0004CD8E9 /* QiitaPopularItemsView.swift in Sources */,
 				F6ADCE9429588E65004CD8E9 /* ProgressIcon.swift in Sources */,
 			);
@@ -426,6 +461,7 @@
 				DEVELOPMENT_TEAM = TGL6238454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiinnReader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +491,7 @@
 				DEVELOPMENT_TEAM = TGL6238454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiinnReader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,6 +534,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F621DF84296EE30800DCC7FB /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.2;
+			};
+		};
 		F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/keitaoouchi/MarkdownView";
@@ -508,6 +553,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F621DF80296DC76700DCC7FB /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
+		F621DF85296EE30800DCC7FB /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F621DF84296EE30800DCC7FB /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		F6ADCE9129576B66004CD8E9 /* MarkdownView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F6ADCE9029576B66004CD8E9 /* XCRemoteSwiftPackageReference "MarkdownView" */;
